@@ -4,6 +4,8 @@ require "dry/transaction/operation"
 
 module Blog
   class Operation
-    include Dry::Transaction::Operation
+    def self.inherited(subclass)
+      subclass.include Dry::Transaction::Operation
+    end
   end
 end
