@@ -39,4 +39,5 @@ group :test do
   gem "poltergeist"
   gem "rspec"
   gem "rom-factory"
+  gem "time_math2"
 end
