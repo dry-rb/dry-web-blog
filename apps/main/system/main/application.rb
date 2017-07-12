@@ -20,7 +20,7 @@ module Main
       r.multi_route
 
       r.root do
-        r.view "welcome"
+        r.view "home"
       end
     end
 
