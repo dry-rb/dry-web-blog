@@ -4,7 +4,7 @@ module Persistence
       schema :articles, infer: true
 
       def published
-        where(published: true)
+        by_published(true)
       end
 
       def order_by_published_at

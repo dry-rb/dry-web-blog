@@ -110,6 +110,20 @@ ALTER TABLE ONLY schema_migrations
 
 
 --
+-- Name: articles_published_index; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX articles_published_index ON articles USING btree (published);
+
+
+--
+-- Name: articles_slug_index; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX articles_slug_index ON articles USING btree (slug);
+
+
+--
 -- PostgreSQL database dump complete
 --
 
