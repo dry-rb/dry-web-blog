@@ -9,6 +9,7 @@ RSpec.feature "Home page" do
 
   scenario "Viewing articles list" do
     visit "/"
+    save_and_open_page
     expect(page).to have_selector ".article:nth-of-type(1) h2", text: "My 2nd article"
     expect(page).to have_selector ".article:nth-of-type(2) h2", text: "My 1st article"
   end
