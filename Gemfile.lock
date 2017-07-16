@@ -123,6 +123,7 @@ GEM
     rack_csrf (2.6.0)
       rack (>= 1.1.0)
     rake (12.0.0)
+    redcarpet (3.4.0)
     roda (2.27.0)
       rack
     roda-flow (0.3.1)
@@ -210,6 +211,7 @@ DEPENDENCIES
   rack (>= 2.0)
   rack_csrf
   rake
+  redcarpet
   rom (>= 3.1.0)
   rom-factory
   rom-repository

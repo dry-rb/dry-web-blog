@@ -26,6 +26,7 @@ gem "dry-transaction", ">= 0.10.0"
 gem "dry-types"
 gem "dry-validation"
 gem "dry-view", ">= 0.3.0"
+gem "redcarpet" # Markdown rendering
 gem "slim"
 
 group :development, :test do
