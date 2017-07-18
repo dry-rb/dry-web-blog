@@ -1,7 +1,6 @@
 require_relative "db_spec_helper"
 
 require "rack/test"
-require "capybara/rspec"
 require "capybara-screenshot/rspec"
 require "capybara/poltergeist"
 
@@ -28,7 +27,7 @@ end
 
 RSpec.configure do |config|
   config.include Rack::Test::Methods, type: :request
-  config.include Rack::Test::Methods, Capybara::DSL, type: :feature
+  config.include Rack::Test::Methods, type: :feature
   config.include Test::WebHelpers
 
   config.before :suite do

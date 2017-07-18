@@ -1,5 +1,6 @@
 ENV["RACK_ENV"] = "test"
 
+require "capybara/rspec"
 require "pry-byebug"
 
 SPEC_ROOT = Pathname(__FILE__).dirname
