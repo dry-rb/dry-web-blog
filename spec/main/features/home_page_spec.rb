@@ -1,4 +1,3 @@
-require "time_math"
 require "web_spec_helper"
 
 RSpec.feature "Home page" do
