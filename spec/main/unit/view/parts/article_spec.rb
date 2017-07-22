@@ -14,10 +14,10 @@ RSpec.describe Main::View::Parts::Article do
   let(:article) { Factory.structs[:article] }
 
   describe "#body_html" do
-    let(:article) { Factory.structs[:article, body: "**Welcome** to my blog"] }
+    let(:article) { Factory.structs[:article, body: "**Hello** from my blog's first article!"] }
 
-    it "renders markdown as HTML" do
-      expect(part.body_html).to eq "<p><strong>Welcome</strong> to my blog</p>\n"
+    it "renders markdown as HTML, with smart punctuation" do
+      expect(part.body_html).to eq "<p><strong>Hello</strong> from my blog’s first article!</p>\n"
     end
   end
 end

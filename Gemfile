@@ -19,6 +19,7 @@ gem "rom-repository"
 gem "rom-sql", ">= 1.1.0"
 
 # Application dependencies
+gem "commonmarker", "~> 0.16.8" # Markdown rendering
 gem "dry-matcher"
 gem "dry-monads"
 gem "dry-struct"
@@ -26,7 +27,6 @@ gem "dry-transaction", ">= 0.10.0"
 gem "dry-types"
 gem "dry-validation"
 gem "dry-view", ">= 0.3.0"
-gem "redcarpet" # Markdown rendering
 gem "slim"
 
 group :development, :test do
