@@ -16,7 +16,8 @@ This is also a _work in progress_. This project is under active development as w
 
 ## TODO
 
-- [ ] Home page with article listing
+- [x] Home page with article listing (see [#1](https://github.com/dry-rb/dry-web-blog/pull/1))
+- [ ] Article list pagination
 - [ ] Article permalink page
 - [ ] Category pages with article listings
 - [ ] Admin area with user authentication
