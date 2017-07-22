@@ -1,8 +1,10 @@
 # Ignore app settings (copy to .example.env.* to check in example files)
 /.env*
 
-# RSpec
+# Tests
 /spec/examples.txt
+/coverage
+
 
 # Logs
 /log/*.log

@@ -36,9 +36,11 @@ end
 group :test do
   gem "capybara"
   gem "capybara-screenshot"
+  gem "codeclimate-test-reporter"
   gem "database_cleaner"
   gem "poltergeist"
   gem "rspec"
+  gem "simplecov"
   gem "rom-factory"
   gem "time_math2"
 end

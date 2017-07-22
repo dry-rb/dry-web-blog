@@ -1,5 +1,12 @@
 ENV["RACK_ENV"] = "test"
 
+if RUBY_ENGINE == "ruby" && RUBY_VERSION >= "2.4"
+  require "simplecov"
+  SimpleCov.start do
+    add_filter "/spec/"
+  end
+end
+
 require "capybara/rspec"
 require "pry-byebug"
 require "time_math"

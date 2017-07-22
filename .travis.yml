@@ -1,0 +1,25 @@
+language: ruby
+dist: trusty
+sudo: false
+cache: bundler
+before_script:
+  - cp .example.env-travis .env
+  - createdb dry_web_blog_test
+  - RACK_ENV=test bundle exec rake db:migrate
+script:
+  - bundle exec rake
+after_success:
+  - '[ -d coverage ] && bundle exec codeclimate-test-reporter'
+rvm:
+  - 2.4.1
+addons:
+  code_climate:
+    repo_token: b01f817325e1e075ba4189ca82913d5600d29c2345086849efceb28e8c39c191
+notifications:
+  email: false
+  webhooks:
+    urls:
+      - https://webhooks.gitter.im/e/19098b4253a72c9796db
+    on_success: change  # options: [always|never|change] default: always
+    on_failure: always  # options: [always|never|change] default: always
+    on_start: false     # default: false
