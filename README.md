@@ -24,4 +24,11 @@ To run the app, follow these steps:
 2. Copy `.example.env` to `.env`
 3. Copy `.example.env.test` to `.env.test`
 4. Create a `dry_web_blog_development` Postgres database
-5. Run the app with `bundle exec shotgun -p 3000 -o 0.0.0.0 config.ru`
+5. Update the database schema with `bundle exec rake db:migrate`
+6. Run the app with `bundle exec shotgun -p 3000 -o 0.0.0.0 config.ru`
+
+## Testing
+
+1. Create a `dry_web_blog_test` Postgres database
+2. Update the database schema with `RACK_ENV=test bundle exec rake db:migrate`
+3. Run the tests with `bundle exec rake spec`

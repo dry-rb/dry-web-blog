@@ -1,13 +1,21 @@
 ENV["RACK_ENV"] = "test"
 
+require "capybara/rspec"
 require "pry-byebug"
+require "time_math"
 
 SPEC_ROOT = Pathname(__FILE__).dirname
 
 Dir[SPEC_ROOT.join("support/*.rb").to_s].each(&method(:require))
 Dir[SPEC_ROOT.join("shared/*.rb").to_s].each(&method(:require))
 
+# Require umbrella container
 require SPEC_ROOT.join("../system/blog/container")
+
+# Require each app sub-app's container
+Dir[SPEC_ROOT.join("../apps/*")].map(&File.method(:basename)).each do |app|
+  require SPEC_ROOT.join("../apps/#{app}/system/#{app}/container")
+end
 
 RSpec.configure do |config|
   config.disable_monkey_patching!

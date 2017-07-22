@@ -19,6 +19,7 @@ gem "rom-repository"
 gem "rom-sql", ">= 1.1.0"
 
 # Application dependencies
+gem "commonmarker", "~> 0.16.8" # Markdown rendering
 gem "dry-matcher"
 gem "dry-monads"
 gem "dry-struct"
@@ -39,4 +40,5 @@ group :test do
   gem "poltergeist"
   gem "rspec"
   gem "rom-factory"
+  gem "time_math2"
 end
