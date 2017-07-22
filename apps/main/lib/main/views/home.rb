@@ -1,5 +1,6 @@
 require "main/import"
 require "main/view/controller"
+require "main/view/parts/article"
 
 module Main
   module Views
@@ -10,7 +11,7 @@ module Main
         config.template = "home"
       end
 
-      expose :articles do
+      expose :articles, as: View::Parts::Article do
         articles_repo.home_page_listing
       end
     end
