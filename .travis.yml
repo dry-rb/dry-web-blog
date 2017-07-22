@@ -2,6 +2,10 @@ language: ruby
 dist: trusty
 sudo: false
 cache: bundler
+before_script:
+  - cp .example.env-travis .env
+  - createdb dry_web_blog_test
+  - RACK_ENV=test bundle exec rake db:migrate
 script:
   - bundle exec rake
 after_success:
