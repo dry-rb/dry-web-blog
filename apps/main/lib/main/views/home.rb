@@ -12,7 +12,7 @@ module Main
       end
 
       expose :articles, as: View::Parts::Article do
-        articles_repo.home_page_listing
+        articles_repo.listing
       end
     end
   end

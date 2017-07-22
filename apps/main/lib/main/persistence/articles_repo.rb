@@ -3,8 +3,8 @@ require "blog/repository"
 module Main
   module Persistence
     class ArticlesRepo < Blog::Repository[:articles]
-      def home_page_listing
-        articles.published.order_by_published_at.limit(10)
+      def listing(limit: 10)
+        articles.published.order_by_published_at.limit(limit)
       end
     end
   end
