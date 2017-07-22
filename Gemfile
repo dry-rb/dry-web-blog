@@ -39,6 +39,7 @@ group :test do
   gem "database_cleaner"
   gem "poltergeist"
   gem "rspec"
+  gem "simplecov"
   gem "rom-factory"
   gem "time_math2"
 end
