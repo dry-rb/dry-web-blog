@@ -5,7 +5,7 @@ require "main/view/parts/article"
 module Main
   module Views
     class Home < Main::View::Controller
-      include Main::Import["repositories.articles_repo"]
+      include Main::Import["persistence.articles_repo"]
 
       configure do |config|
         config.template = "home"
