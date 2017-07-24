@@ -6,8 +6,6 @@ module Main
     require root.join("system/blog/container")
     import core: Blog::Container
 
-    register :rack_monitor, Blog::Container[:rack_monitor]
-
     configure do |config|
       config.root = Pathname(__FILE__).join("../..").realpath.dirname.freeze
       config.logger = Blog::Container[:logger]
