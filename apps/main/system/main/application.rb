@@ -24,11 +24,6 @@ module Main
       end
     end
 
-    error do |e|
-      self.class[:rack_monitor].instrument(:error, exception: e)
-      raise e
-    end
-
     load_routes!
   end
 end
