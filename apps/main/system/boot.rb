@@ -2,4 +2,4 @@ require_relative "blog/main/container"
 
 Blog::Main::Container.finalize!
 
-require "blog/main/application"
+require "blog/main/web"

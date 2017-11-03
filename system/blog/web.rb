@@ -2,7 +2,7 @@ require "dry/web/roda/application"
 require_relative "container"
 
 module Blog
-  class Application < Dry::Web::Roda::Application
+  class Web < Dry::Web::Roda::Application
     configure do |config|
       config.container = Container
     end
@@ -10,7 +10,7 @@ module Blog
     plugin :error_handler
 
     route do |r|
-      r.run Blog::Main::Application.freeze.app
+      r.run Blog::Main::Web.freeze.app
     end
 
     error do |e|

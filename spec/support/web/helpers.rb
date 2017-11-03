@@ -3,7 +3,7 @@ module Test
     module_function
 
     def app
-      Blog::Application.app
+      Blog::Web.app
     end
   end
 end

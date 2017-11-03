@@ -1,6 +1,6 @@
 # Define your routes like this:
 #
-# class Blog::Main::Application
+# class Blog::Main::Web
 #   route "example" do |r|
 #     # Routes go here
 #   end

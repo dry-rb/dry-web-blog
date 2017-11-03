@@ -3,7 +3,7 @@ require_relative "container"
 
 module Blog
   module Main
-    class Application < Dry::Web::Roda::Application
+    class Web < Dry::Web::Roda::Application
       configure do |config|
         config.container = Container
         config.routes = "web/routes".freeze
