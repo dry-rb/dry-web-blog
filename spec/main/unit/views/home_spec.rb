@@ -1,12 +1,12 @@
 require "db_spec_helper"
-require "main/views/home"
-require "main/view/context"
+require "blog/main/views/home"
+require "blog/main/view/context"
 
-RSpec.describe Main::Views::Home, "#call", type: :view do
+RSpec.describe Blog::Main::Views::Home, "#call", type: :view do
   subject(:view) { described_class.new }
 
   let(:context) {
-    Main::View::Context.new(
+    Blog::Main::View::Context.new(
       fullpath: "/",
       csrf_metatag: -> { "xxx" },
       csrf_tag: -> { "xxx" },

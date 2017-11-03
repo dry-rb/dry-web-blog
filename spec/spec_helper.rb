@@ -21,7 +21,7 @@ require SPEC_ROOT.join("../system/blog/container")
 
 # Require each app sub-app's container
 Dir[SPEC_ROOT.join("../apps/*")].map(&File.method(:basename)).each do |app|
-  require SPEC_ROOT.join("../apps/#{app}/system/#{app}/container")
+  require SPEC_ROOT.join("../apps/#{app}/system/blog/#{app}/container")
 end
 
 RSpec.configure do |config|

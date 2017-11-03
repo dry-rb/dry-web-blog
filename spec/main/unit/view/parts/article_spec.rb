@@ -1,7 +1,7 @@
 require "db_spec_helper"
-require "main/view/parts/article"
+require "blog/main/view/parts/article"
 
-RSpec.describe Main::View::Parts::Article do
+RSpec.describe Blog::Main::View::Parts::Article do
   subject(:part) {
     described_class.new(
       name: "article",

@@ -10,7 +10,7 @@ module Blog
     plugin :error_handler
 
     route do |r|
-      r.run ::Main::Application.freeze.app
+      r.run Blog::Main::Application.freeze.app
     end
 
     error do |e|
