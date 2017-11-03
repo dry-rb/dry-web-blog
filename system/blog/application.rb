@@ -7,6 +7,8 @@ module Blog
       config.container = Container
     end
 
+    plugin :error_handler
+
     route do |r|
       r.run ::Main::Application.freeze.app
     end
