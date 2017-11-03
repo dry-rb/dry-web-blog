@@ -1,6 +1,6 @@
 require_relative "spec_helper"
 
-Blog::Container.boot! :rom
+Blog::Container.start :persistence
 
 Dir[SPEC_ROOT.join("support/db/*.rb").to_s].each(&method(:require))
 Dir[SPEC_ROOT.join("shared/db/*.rb").to_s].each(&method(:require))
