@@ -17,7 +17,7 @@ end
 
 namespace :db do
   task :setup do
-    Blog::Container.boot :rom
+    Blog::Container.init :persistence
   end
 
   desc "Prints current schema version"

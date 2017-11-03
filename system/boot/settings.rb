@@ -1,10 +1,10 @@
-Blog::Container.finalize :settings do |container|
-  init do
-    require "blog/settings"
+Blog::Container.boot :settings, from: :system do
+  before :init do
+    ::Kernel.require "types"
   end
 
-  start do
-    settings = Blog::Settings.load(container.config.root, container.config.env)
-    container.register "settings", settings
+  settings do
+    key :session_secret, Types::Strict::String.constrained(filled: true)
+    key :database_url, Types::Strict::String.constrained(filled: true)
   end
 end

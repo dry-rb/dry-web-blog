@@ -1,4 +1,5 @@
 require "dry/web/container"
+require "dry/system/components"
 
 module Blog
   class Container < Dry::Web::Container
