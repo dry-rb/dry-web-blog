@@ -1,2 +1,2 @@
 require_relative "system/boot"
-run Blog::Application.freeze.app
+run Blog::Web.freeze.app

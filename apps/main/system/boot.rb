@@ -1,5 +1,5 @@
-require_relative "main/container"
+require_relative "blog/main/container"
 
-Main::Container.finalize!
+Blog::Main::Container.finalize!
 
-require "main/application"
+require "blog/main/web"

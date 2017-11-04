@@ -13,4 +13,4 @@ Dir[app_paths].each do |f|
   require "#{f}/system/boot"
 end
 
-require "blog/application"
+require "blog/web"

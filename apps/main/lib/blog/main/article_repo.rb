@@ -1,8 +1,8 @@
 require "blog/repository"
 
-module Main
-  module Persistence
-    class ArticlesRepo < Blog::Repository[:articles]
+module Blog
+  module Main
+    class ArticleRepo < Blog::Repository[:articles]
       def listing(limit: 10)
         articles.published.order_by_published_at.limit(limit)
       end
