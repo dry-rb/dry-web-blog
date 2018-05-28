@@ -1,11 +1,9 @@
 [travis]: https://travis-ci.org/dry-rb/dry-web-blog
-[gemnasium]: https://gemnasium.com/dry-rb/dry-web-blog
 [codeclimate]: https://codeclimate.com/github/dry-rb/dry-web-blog
 
 # dry-web-blog: a dry-rb/rom-rb example project
 
 [![Build Status](https://travis-ci.org/dry-rb/dry-web-blog.svg?branch=master)][travis]
-[![Dependency Status](https://gemnasium.com/dry-rb/dry-web-blog.svg)][gemnasium]
 [![Code Climate](https://codeclimate.com/github/dry-rb/dry-web-blog/badges/gpa.svg)][codeclimate]
 
 This project demonstrates a realistic app built with [dry-rb](http://dry-rb.org/) & [rom-rb](http://rom-rb.org/).
