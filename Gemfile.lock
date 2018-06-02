@@ -18,7 +18,7 @@ GEM
     codeclimate-test-reporter (1.0.8)
       simplecov (<= 0.13)
     coderay (1.1.2)
-    commonmarker (0.16.8)
+    commonmarker (0.17.9)
       ruby-enum (~> 0.5)
     concurrent-ruby (1.0.5)
     database_cleaner (1.6.2)
@@ -98,7 +98,7 @@ GEM
       thor (~> 0.19)
     faker (1.8.4)
       i18n (~> 0.5)
-    i18n (0.9.1)
+    i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     ice_nine (0.11.2)
     inflecto (0.0.2)
@@ -108,7 +108,7 @@ GEM
     method_source (0.9.0)
     mini_mime (0.1.4)
     mini_portile2 (2.3.0)
-    nokogiri (1.8.1)
+    nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
     pg (0.21.0)
     poltergeist (1.16.0)
@@ -183,7 +183,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.7.0)
     rspec-support (3.7.0)
-    ruby-enum (0.7.1)
+    ruby-enum (0.7.2)
       i18n
     sequel (5.2.0)
     shotgun (0.9.2)
@@ -244,4 +244,4 @@ DEPENDENCIES
   time_math2 (~> 0.1)
 
 BUNDLED WITH
-   1.15.4
+   1.16.2
